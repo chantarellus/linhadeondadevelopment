@@ -35,6 +35,9 @@
 .grey {
   color: #899DA5; }
 
+.light-grey {
+  color: #F3F3F3; }
+
 .white {
   color: white; }
 
@@ -47,7 +50,8 @@ h2 {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 50px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20px; }
 
 h3 {
   font-family: 'Roboto-Bold', sans-serif;
@@ -107,6 +111,20 @@ a.button {
   border-color: #2D9CDB;
   color: #2D9CDB;
   border-style: solid; }
+
+a.button-white {
+  background-color: white;
+  border: 2px;
+  border-radius: 25px;
+  color: #2D9CDB;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Roboto-Bold';
+  border-style: solid;
+  border-color: #2D9CDB; }
 
 .shadow {
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px;
@@ -284,6 +302,33 @@ header.main {
 /* PAGE - CLASSES */
 #lessons {
   margin-top: -200px; }
+  #lessons tr, #lessons td, #lessons table, #lessons thead, #lessons tbody, #lessons tfoot {
+    border: none; }
+  #lessons .individual-classes, #lessons .group-classes {
+    padding-top: 20px; }
+    #lessons .individual-classes h6, #lessons .group-classes h6 {
+      text-align: center; }
+    #lessons .individual-classes img, #lessons .group-classes img {
+      height: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+  #lessons .individual-classes {
+    background-color: white; }
+  #lessons .group-classes {
+    background-color: #2D9CDB;
+    color: white; }
+  #lessons td {
+    padding: 10px 20px;
+    border: none; }
+  #lessons .table-grey {
+    background-color: #F3F3F3; }
+  #lessons .table-white {
+    background-color: white; }
+  #lessons .table-dark-blue {
+    background-color: #2494D4; }
+  #lessons .table-blue {
+    background-color: #2D9CDB; }
 
 #the_experience_includes {
   padding: 100px 0; }
@@ -353,7 +398,7 @@ header.main {
   color: #fff; }
 
 #icons-performance {
-  margin-top: -150px; }
+  margin-top: -200px; }
 
 /* PAGE - HISTORY */
 #timeline {
@@ -416,10 +461,14 @@ header.main {
 
 /* PAGE - BLOG */
 #blog .blog_1st_post {
+  position: relative;
   background-color: #2D9CDB;
   color: white;
   padding: 30px 0;
   margin-bottom: 100px; }
+  #blog .blog_1st_post .small-caps-button {
+    position: absolute;
+    bottom: 30px; }
 
 #blog .title {
   margin-top: -200px; }
