@@ -1,0 +1,613 @@
+// Types
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Cabin-Bold;
+    src: url(../fonts/Cabin/Cabin-Bold.ttf);
+}
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin/Cabin-Regular.ttf);
+}
+
+// Styles
+
+.blue {
+    color:#2D9CDB;
+}
+
+.dark-blue {
+    color:#104150;
+}
+
+.light-blue {
+    color:#EAF5FB;
+}
+
+.grey {
+    color:#899DA5;
+}
+
+.white {
+    color: white;
+}
+
+h1 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 4.188em;
+    color: #104150;
+}
+
+h2 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    color: #104150;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 1.75em;
+    color: #104150;
+}
+
+h5 {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 22px;
+    font-variant: small-caps;
+    color: #104150;
+}
+
+h6 {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+time {
+    font-size: 12px;
+    font-family: 'Roboto-Medium', sans-serif;
+    margin-bottom: 10px;
+}
+
+.small-caps-button {
+    font-size: 16px;
+    font-variant: small-caps;
+    font-family: 'Roboto-Medium', sans-serif;
+}
+
+a.button {
+    background-color: #2D9CDB;
+    border: 2px;
+    border-radius: 25px;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Roboto-Bold';
+    border-style: solid;
+    border-color: #2D9CDB;
+}
+
+.button:hover {
+    background: #fff;
+    border: 2px;
+    border-color: #2D9CDB;
+    color: #2D9CDB;
+    border-style: solid;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px;
+}
+
+// Large screens
+body {
+    width: 100%;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+    body#classes & {
+        background-image: url('../img/BackGround_Lesson.jpg');
+    }
+    body#history & {
+        background-image: url('../img/header_history.png');
+    }
+    body#contacts & {
+        background-image: url('../img/Header_contacts.png');
+    }
+    body#blog & {
+        background-image: url('../img/header_blog.png');
+    }
+    body#performace & {
+        background-image: url('../img/header_performance.png') ;
+    }   
+}
+
+nav {
+    a, a:hover, a:active a:focus {
+        color: white;
+    }
+    #logo img {
+        height: 5.625em;
+    }
+    #menu, #language {
+        text-align: right;
+        justify-content: flex-end;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+        margin-right: 1.875em;
+        font-size: 16px;
+        color: white;
+        font-family: 'Roboto-Bold', sans-serif;
+        list-style: none;
+    }
+}
+
+footer {
+    background-image: url('../img/Background_footer.jpg');
+    background-position: top center;
+    background-size: cover;
+    height: 750px;
+    margin-top: 5em;
+    .logo_footer {
+        padding-right:15px;
+        padding-top: 10px;
+    }
+    .title_logo {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    p,a {
+        margin:0;
+        padding: 0;
+    }
+}
+
+#banner {
+    .banner-light {
+        margin-top: 3em;
+        padding:1em;
+        text-align: center;
+        background-color: #EAF5FB;
+    }
+    .banner-dark {
+        background-color: #2B343F;
+    }
+    .banner-text {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .banner-text-white {
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+/* PAGE - HOME */
+
+header.main{
+    height: 100vh;
+    background-color: black;
+}
+
+#intro {
+    padding: 100px 0 0;
+    #intro_image_2 {
+        position: relative;
+        top: -100px;
+        left: 300px;
+    }
+    .large-4 {
+        padding-top: 50px;
+    }
+}
+
+#our_team {
+    background-color: #EAF5FB;
+    &,
+    .large-4,
+    .grid-y,
+    #team_image {
+        height: 600px;
+    }
+    #team_image {
+        background-image: url('../img/fototeam.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+#instagram {
+    padding: 20px 0 100px;
+    .large-12 {
+        margin-bottom: 20px;
+    }
+    a.button {
+        margin-left: 10px;
+        margin-top: 12px;
+    }
+}
+
+#promo_code {
+    background-image: url('../img/ban-back.jpg');
+    background-position: center center;
+    background-size: cover;
+    &,
+    .grid-y {
+        height: 600px;
+    }
+    h3 {
+        font-family: 'Cabin-bold';
+        color: #fff;
+    }
+    span {
+        font-variant: small-caps;
+    }
+    img {
+        height: 80px;
+        padding-right: 20px;
+    }
+}
+
+#trip_advisor {
+    text-align: center;
+    padding: 100px 0;
+    p {
+        width: 90%;
+        margin: 0px auto 0;
+    }
+    .large-12 {
+        margin-bottom: 50px;        
+    }
+    h5 {
+         margin-top: 20px;
+    }
+    .large-4:hover {
+        color:#104150;
+    }
+}
+
+#beaches {
+    padding: 20px 0 100px;
+    #matosinhos,
+    #leca {
+        position: relative;
+    }
+    #matosinhos {
+        div,
+        a {
+            position: absolute;
+            left: -60px;
+        }
+        div {
+            top: 20px;
+        }
+        a {
+            bottom: 20px;
+        }
+    }
+    #leca {
+        padding-top: 40px;
+        div,
+        a {
+            position: absolute;
+            right: -60px;
+            text-align: right;
+        }
+        div {
+            top: 60px;
+        }
+        a {
+            bottom: 80px;
+        }
+    }
+}
+
+
+
+/* PAGE - CLASSES */
+
+#lessons {
+    margin-top: -200px;
+}
+
+#the_experience_includes {
+    padding: 100px 0;
+    #foto {
+        background-image: url('../img/aula.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+#blog_posts {
+    position: relative;
+    .blog-text-preview {
+    font-size: 16px;
+    line-height: 22.4px; }
+    h4.blog-little {
+        font-family: 'Roboto-Bold', sans-serif;
+        font-size: 18px;
+        line-height: 25.2px; }
+    .small-caps-button {
+        position: absolute;
+        bottom: 0;
+    }
+    .title {
+        margin-bottom: 30px;
+    }
+}
+
+/* PAGE - PERFORMANCE */
+
+#iniciados {
+    background-color: #FCEBA0;
+    font-size: 22px;
+    color: #104150;
+    text-align: center;
+  }
+  #aprendiz{
+    background-color: #F3C180;
+    font-size: 22px;
+    color: #104150;
+    text-align: center;
+  }
+  #intermedio-1{
+    background-color: #9ECDEA;
+    font-size: 22px;
+    color: #104150;
+    text-align: center;
+  }
+  #intermedio-2{
+    background-color: #A279B1;
+    font-size: 22px;
+    color: #104150;
+    text-align: center;
+  }
+  #avanzado-1{
+    background-color: #E5E5E5;
+    font-size: 22px;
+    color: #104150;
+    text-align: center;
+  }
+  .logo-titule-ac{
+    position: absolute;
+    width: 38px;
+    left: 32px;
+    top: 8px;
+  }
+  .accordion-content{
+    text-align: left;
+  }
+  #style-box{
+    background-color: #2D9CDB;
+    text-align: center;
+    color: #fff;
+    
+  }
+  #icons-performance{
+    margin-top: -150px;
+  }
+
+
+
+/* PAGE - HISTORY */
+
+#timeline {
+    background-image: url('../img/timeline.png');
+}
+
+#history {
+    .grid-y {
+        height: 100%;
+        align-items: center;
+    }
+    #part_1_image {
+        height: 20em;
+        background-image: url('../img/history_1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #part_1_text, #part_2_text, #part_3_text {
+        //padding-top: 6.25em;
+    }
+    
+    #part_2_image {
+        height: 12.5em;
+        background-image: url('../img/history_2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+    #part_2_text {
+        text-align: right;
+    }
+    #part_3_image {
+        height:35em;
+        background-image: url('../img/history_3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+}
+
+
+/* PAGE - CONTACTS */
+
+#contacts {
+    p {
+        color: white;
+        margin-bottom: 50px;
+    }
+    .directions-left {
+       background-color: #2D9CDB;
+        padding-top: 50px;
+    }
+    img.icon {
+        width: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .map {
+    background-image: url('../img/Map.png');
+    }
+    #form {
+        margin-top: -300px;
+    }
+    form {
+        background-color: white;
+        padding: 50px;
+    }
+}
+
+
+/* PAGE - BLOG */
+
+#blog {
+    .blog_1st_post {
+        background-color: #2D9CDB;
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 100px;}
+    .title {
+        margin-top: -200px;
+    }
+}
+   
+
+
+
+/* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+    h1 {
+    font-size: 40px;
+    }
+    
+    header {
+        #logo {
+            margin-top: 20px;
+        }
+    }
+        
+    #intro {
+            #intro_image_2 {
+                position: relative;
+                top: -10px;
+                left: 10px;
+            }
+            .large-4 {
+                padding-top: 50px;
+                margin-bottom: 20px;
+            }
+        h3, p {
+            padding: 0 20px;
+            }
+        }
+    
+    #our_team {
+        h3, p {
+        padding: 0 10px;
+        }
+    }
+    
+    #competition {
+        h3, p {
+            padding-left:10px;
+        }
+        h3 {
+            padding-top: 20px;
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+    
+    #instagram {
+        img.foto {
+            margin-bottom: 10px;
+        }
+    }
+    
+    #trip_advisor p {
+        margin-bottom: 20px;
+    }
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    
+
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
