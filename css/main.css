@@ -383,6 +383,12 @@ header.main {
   color: #104150;
   text-align: center; }
 
+#avanzado-2 {
+  background-color: #A7A5A6;
+  font-size: 22px;
+  color: #104150;
+  text-align: center; }
+
 .logo-titule-ac {
   position: absolute;
   width: 38px;
@@ -394,11 +400,63 @@ header.main {
 
 #style-box {
   background-color: #2D9CDB;
-  text-align: center;
-  color: #fff; }
+  text-align: center; }
+  #style-box h3 {
+    color: #fff; }
+  #style-box img {
+    width: 80%;
+    padding: 40px; }
+
+#style-box-white {
+  background-color: #fff;
+  text-align: center; }
+  #style-box-white img {
+    width: 80%;
+    padding: 40px; }
 
 #icons-performance {
   margin-top: -200px; }
+
+#table-performace {
+  margin-top: 100px; }
+
+#competition {
+  margin-top: 100px; }
+
+#blog_posts {
+  margin-top: 100px; }
+
+#banner {
+  margin-top: 100px; }
+  #banner .banner-light {
+    margin-top: 3em;
+    padding: 1em;
+    text-align: center;
+    background-color: #EAF5FB; }
+  #banner .banner-dark {
+    background-color: #2B343F;
+    height: 54px;
+    margin-top: -25px; }
+  #banner .grid-x {
+    margin-top: 7px; }
+  #banner .banner-text {
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 24px;
+    line-height: 30px; }
+  #banner .banner-text-white {
+    font-size: 14px;
+    color: #ffffff; }
+  #banner input {
+    border: 0 !important;
+    outline: 0 !important;
+    color: white !important;
+    background: transparent !important;
+    border-bottom: 1px solid white !important; }
+  #banner input [type='submit'], #banner [type='button'] {
+    border-radius: 30px;
+    width: 100px;
+    background: #2f9cda !important;
+    border-bottom: none !important; }
 
 /* PAGE - HISTORY */
 #timeline {
