@@ -176,7 +176,10 @@ header {
     }
     body#performace & {
         background-image: url('../img/header_performance.png') ;
-    }   
+    }
+    body#teachers & {
+        background-image: url('../img/header_teachers.png') ;
+    }
 }
 
 nav {
@@ -326,7 +329,7 @@ header.main{
         margin: 0px auto 0;
     }
     .large-12 {
-        margin-bottom: 50px;        
+        margin-bottom: 50px;
     }
     h5 {
          margin-top: 20px;
@@ -416,7 +419,7 @@ header.main{
     .table-blue {
         background-color: #2D9CDB;
     }
-    
+
 }
 
 
@@ -596,11 +599,11 @@ header.main{
         background-position: center;
         background-size: cover;
     }
-    
+
     #part_1_text, #part_2_text, #part_3_text {
         //padding-top: 6.25em;
     }
-    
+
     #part_2_image {
         height: 12.5em;
         background-image: url('../img/history_2.png');
@@ -650,6 +653,27 @@ header.main{
 }
 
 
+/* PAGE - TEACHERS */
+
+#teachers-list{
+  margin-top: -250px;
+
+  .teacher-card{
+    height: auto;
+    background-color: #fff;
+  }
+
+  .teacher-content{
+    padding: 20px;
+  }
+
+  ul {
+    list-style-image: url('../img/icons/goal.svg');
+  }
+
+}
+
+
 /* PAGE - BLOG */
 
 #blog {
@@ -667,7 +691,7 @@ header.main{
         margin-top: -200px;
     }
 }
-   
+
 
 
 
@@ -678,13 +702,13 @@ header.main{
     h1 {
     font-size: 40px;
     }
-    
+
     header {
         #logo {
             margin-top: 20px;
         }
     }
-        
+
     #intro {
             #intro_image_2 {
                 position: relative;
@@ -699,13 +723,13 @@ header.main{
             padding: 0 20px;
             }
         }
-    
+
     #our_team {
         h3, p {
         padding: 0 10px;
         }
     }
-    
+
     #competition {
         h3, p {
             padding-left:10px;
@@ -717,13 +741,13 @@ header.main{
             width: 100%;
         }
     }
-    
+
     #instagram {
         img.foto {
             margin-bottom: 10px;
         }
     }
-    
+
     #trip_advisor p {
         margin-bottom: 20px;
     }
@@ -732,7 +756,7 @@ header.main{
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
-    
+
 
 
 } /* min-width 641px, medium screens */
